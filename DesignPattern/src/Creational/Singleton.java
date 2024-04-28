@@ -23,10 +23,25 @@ public class Singleton {
 		}
 		return instance;
 	}
+	
+	public void setData(String newData) {
+		this.data = newData;
+	}
+	
+	@Override
+	public String toString() {
+		return data + " what is good?";
+	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+        // Correct way to use a singleton
+        Singleton example = Singleton.getInstance("Wyatt");
+        System.out.println(example);
+        example.setData("Idk, whatever!");
 
+        // This will not create a new instance, it will return the existing one with "Wyatt"
+        Singleton example2 = Singleton.getInstance("Jim");
+        System.out.println(example2);
 	}
 
 }
