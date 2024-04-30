@@ -1,4 +1,4 @@
-package Creational;
+package Singleton;
 // Global point of access, like a president of a country
 // Singletons are like GLOBAL vars, only one instance of this class at a time
 //https://www.youtube.com/watch?v=tSZn4wkBIu8&list=PLlsmxlJgn1HJpa28yHzkBmUY-Ty71ZUGc&index=2
