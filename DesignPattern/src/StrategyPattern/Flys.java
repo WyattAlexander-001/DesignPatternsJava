@@ -21,9 +21,7 @@ String fly();
 class ItFlys implements Flys{
 
 	public String fly() {
-		
-		return "Flying High";
-		
+		return "Flying High";		
 	}
 	
 }
@@ -33,9 +31,7 @@ class ItFlys implements Flys{
 class CantFly implements Flys{
 
 	public String fly() {
-		
 		return "I can't fly";
-		
 	}
 	
 }
