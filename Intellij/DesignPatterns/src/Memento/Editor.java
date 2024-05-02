@@ -10,6 +10,9 @@ public class Editor {
     }
 
     public String getContent() {
+        if(queue.isEmpty()){
+            return "Empty";
+        }
         return queue.getLast();
     }
 
