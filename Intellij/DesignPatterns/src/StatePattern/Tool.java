@@ -1,6 +1,7 @@
 package StatePattern;
 
-//Much better!
+//Much better! OPEN/CLOSE PRINCIPLE! I can just add new classes for features like Selection, Brush, Eraser!
+//But closed to modification!
 public interface Tool {
     void mouseDown();
     void mouseUp();
