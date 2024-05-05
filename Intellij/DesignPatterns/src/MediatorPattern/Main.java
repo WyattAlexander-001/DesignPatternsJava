@@ -2,6 +2,6 @@ package MediatorPattern;
 
 public class Main {
     public static void main (String[] args){
-        System.out.println("Pattern:");
+        System.out.println("Mediator Pattern:");
     }
 }
