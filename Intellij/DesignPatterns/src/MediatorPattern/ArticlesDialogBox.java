@@ -1,24 +1,21 @@
 package MediatorPattern;
 
-public class ArticlesDialogBox extends DialogBox {
-    private ListBox articlesListBox = new ListBox(this);
-    private TextBox titleTextbox = new TextBox(this);
-    private Button saveButton = new Button(this);
+public class ArticlesDialogBox {
+    private ListBox articlesListBox = new ListBox();
+    private TextBox titleTextbox = new TextBox();
+    private Button saveButton = new Button();
 
 
+    public ArticlesDialogBox(){
+        //Lambda
+        articlesListBox.addEventHandler(this::articleSelected);
+        titleTextbox.addEventHandler(this::titleChanged);
+    }
 
     public void simulateUserInteracting(){
         articlesListBox.setSelection("Article 1 Boi");
         System.out.println("Textbox: " + titleTextbox.getContent());
         System.out.println("Butto: " + saveButton.isEnabled());
-    }
-    @Override
-    public void changed(UIControl control) {
-        if(control == articlesListBox){
-            articleSelected();
-        }else if (control == titleTextbox){
-            titleChanged();
-        }
     }
 
     private void articleSelected(){
