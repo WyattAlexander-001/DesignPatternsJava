@@ -7,6 +7,6 @@ public class Main {
         var imageView = new ImageView(new Image());
         imageView.apply(new VividFilter());
         //imageView.apply(new Caramel()); //Will not work since it doesn't implement or apply filter
-
+        imageView.apply(new CaramelFilterAdaptor(new Caramel())); //adaptor
     }
 }
